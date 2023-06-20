@@ -13,6 +13,7 @@ public class DrivingScore {
 	
 	@Autowired
     CustomerServices cs;
+	int test=12;
 	
 	@GetMapping("customer/{id}")
 	public int getDS(@PathVariable("id") String id)
@@ -25,5 +26,7 @@ public class DrivingScore {
 		return 750;
 	  else
 		return 500;
+
+		
 	}
 }
